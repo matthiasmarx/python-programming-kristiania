@@ -1,4 +1,5 @@
 import math
+from tabulate import tabulate
 
 
 x = 2.5
@@ -138,25 +139,53 @@ print("Exercise 3f: s * 2 =", exercise3_f())
 
 
 print("-----------------------------------------")
-print("Exercise 4:")
+print("Exercise 4 + 5:")
 print("-----------------------------------------")
+
+
 
 
 def littleProgramThatAsksTheUser():
     print("Please enter a number: ")
     userInput1 = input()
-    print("The first number you entered is: ", userInput1)
     print("Please enter another number: ")
     userInput2 = input()
-    print("The second number you entered is: ", userInput2)
     print("-----------------------------------------")
-    print("The sum of the two numbers is: ", int(userInput1) + int(userInput2))
-    print("The difference of the two numbers is: ", int(userInput1) - int(userInput2))
-    print("The product of the two numbers is: ", int(userInput1) * int(userInput2))
-    print("The average of the two numbers is: ", (int(userInput1) + int(userInput2)) / 2)
-    print("The distance of the two numbers is: ", abs(int(userInput1) - int(userInput2)))
-    print("The maximum of the two numbers is: ", max(int(userInput1), int(userInput2)))
-    print("The minimum of the two numbers is: ", min(int(userInput1), int(userInput2)))
+    print(tabulate([["Number 1", userInput1], ["Number 2", userInput2], ["---------","---------"], ["Sum", int(userInput1) + int(userInput2)], ["Difference", int(userInput1) - int(userInput2)], ["Product", int(userInput1) * int(userInput2)], ["Average", (int(userInput1) + int(userInput2)) / 2], ["Distance", abs(int(userInput1) - int(userInput2))], ["Maximum", max(int(userInput1), int(userInput2))], ["Minimum", min(int(userInput1), int(userInput2))]], headers=["Operation", "Result"]))
+    print("-----------------------------------------")
 
 
 littleProgramThatAsksTheUser()
+
+
+print("-----------------------------------------")
+print("Exercise 6:")
+print("-----------------------------------------")
+
+
+def areaAndPerimeterOfARectangle():
+    print("Please enter the width of the rectangle: ")
+    width = input()
+    print("Please enter the height of the rectangle: ")
+    height = input()
+    print("-----------------------------------------")
+
+    print("Area:      %.2f" % (float(width) * float(height)))
+    print("Perimeter: %.2f" % (2 * (float(width) + float(height))))
+    print("-----------------------------------------")
+
+
+areaAndPerimeterOfARectangle()
+
+
+def seperateANumber():
+    print("Please enter a number with more than one digit: ")
+    number = input()
+    output= ""
+    print("-----------------------------------------")
+    for i in number:
+        output += i + " "
+    print(output)
+
+
+seperateANumber()

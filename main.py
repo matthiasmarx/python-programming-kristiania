@@ -8,35 +8,40 @@ n = 4
 
 print("-----------------------------------------")
 print("Exercise 1:")
-print("x: ", x , " | y: ", y, " | m: ", m, " | n: ", n)
+print("x: ", x, " | y: ", y, " | m: ", m, " | n: ", n)
 print("-----------------------------------------")
+
 
 def exercise1_a():
     result = x + n * y - (x + n) * y
     return result
 
+
 def exercise1_b():
     result = m // n + m % n
     return result
+
 
 def exercise1_c():
     result = 5 * x - n / 5
     return result
 
+
 def exercise1_d():
     result = 1 - (1 - (1 - (1 - (1 - n))))
     return result
+
 
 def exercise1_e():
     result = math.sqrt(math.sqrt(n))
     return result
 
 
-print("Excersise 1a: x + n * y - (x + n) * y = ", exercise1_a())
-print("Excersise 1b: m // n + m % n = ", exercise1_b())
-print("Excersise 1c: 5 * x - n / 5 = ", exercise1_c())
-print("Excersise 1d: 1 - (1 - (1 - (1 - (1 - n)))) = ", exercise1_d())
-print("Excersise 1e: math.sqrt(math.sqrt(n)) = ", exercise1_e())
+print("Exercise 1a: x + n * y - (x + n) * y = ", exercise1_a())
+print("Exercise 1b: m // n + m % n = ", exercise1_b())
+print("Exercise 1c: 5 * x - n / 5 = ", exercise1_c())
+print("Exercise 1d: 1 - (1 - (1 - (1 - (1 - n)))) = ", exercise1_d())
+print("Exercise 1e: math.sqrt(math.sqrt(n)) = ", exercise1_e())
 
 
 n = 17
@@ -44,8 +49,9 @@ m = 18
 
 print("-----------------------------------------")
 print("Exercise 2:")
-print("n: ", n , " | m: ", m)
+print("n: ", n, " | m: ", m)
 print("-----------------------------------------")
+
 
 def exercise2_a():
     result = n // 10 + n % 10
@@ -89,32 +95,39 @@ t = "World"
 
 print("-----------------------------------------")
 print("Exercise 3:")
-print("s: ", s , " | t: ", t)
+print("s: ", s, " | t: ", t)
 print("-----------------------------------------")
+
 
 def exercise3_a():
     result = len(s) + len(t)
     return result
 
+
 def exercise3_b():
     result = s[1] + s[2]
     return result
+
 
 def exercise3_c():
     result = s[len(s) // 2]
     return result
 
+
 def exercise3_d():
     result = s + t
     return result
+
 
 def exercise3_e():
     result = t + s
     return result
 
+
 def exercise3_f():
     result = s * 2
     return result
+
 
 print("Exercise 3a: len(s) + len(t) =", exercise3_a())
 print("Exercise 3b: s[1] + s[2] =", exercise3_b())
@@ -122,7 +135,6 @@ print("Exercise 3c: s[len(s) // 2] =", exercise3_c())
 print("Exercise 3d: s + t =", exercise3_d())
 print("Exercise 3e: t + s =", exercise3_e())
 print("Exercise 3f: s * 2 =", exercise3_f())
-
 
 
 print("-----------------------------------------")

@@ -27,6 +27,6 @@ def exercise3_calculateDataOfAcircle():
     ], ["Data", "Result"]))
 
 
-# exercise1_KgToPound()
-# exercise2_calculateTheAge()
+exercise1_KgToPound()
+exercise2_calculateTheAge()
 exercise3_calculateDataOfAcircle()

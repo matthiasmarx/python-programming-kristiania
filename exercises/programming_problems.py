@@ -16,7 +16,7 @@ def exercise2_calculateTheAge():
     print("Your age is: ", todaysYear - age)
 
 
-def exercise3_calculateDataOfAcircle():
+def exercise3_calculateDataOfArticle():
     print("Please enter a radius of a circle: ")
     radius = float(input())
     print(tabulate([
@@ -29,4 +29,4 @@ def exercise3_calculateDataOfAcircle():
 
 exercise1_KgToPound()
 exercise2_calculateTheAge()
-exercise3_calculateDataOfAcircle()
+exercise3_calculateDataOfArticle()

@@ -55,3 +55,4 @@ def findMiddleCharactersInString():
 
 
 findMiddleCharactersInString()
+

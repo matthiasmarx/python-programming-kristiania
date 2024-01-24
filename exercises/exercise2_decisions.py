@@ -126,3 +126,46 @@ except ValueError:
     print("You need to write something! -> Skipped program!")
 
 
+def checkTheWord(word):
+    arguments = {
+        'onlyLetters': 0,
+        'onlyUpperCase': 0,
+        'onlyLowerCase': 0,
+        'onlyDigits': 0,
+        'onlyLettersAndDigits': 0,
+        'startsWithUppercase': 0,
+        'endsWithPeriod': 0
+    }
+    for key in arguments:
+        if key == 'onlyLetters' and word.isalpha():
+            arguments[key] = 1
+        
+        if key == 'onlyUpperCase' and word.isupper():
+            arguments[key] = 1
+        
+        if key == 'onlyLowerCase' and word.islower():
+            arguments[key] = 1
+        
+        if key == 'onlyDigits' and word.isdigit():
+            arguments[key] = 1
+        
+        if key == 'onlyLettersAndDigits' and any(c.isalpha() for c in word) and any(c.isdigit() for c in word):
+            arguments[key] = 1
+
+        if key == 'startsWithUppercase' and word[0].isupper():
+            arguments[key] = 1
+        
+        if key == 'endsWithPeriod' and word.endswith("."):
+            arguments[key] = 1
+
+    print(f"The word '{word}' you entered:")
+    for key in arguments:
+        if(arguments[key] == 1):
+            print(f"- {key}")
+
+
+try:
+    word = str(input("Write a word to check: "))
+    checkTheWord(word)
+except ValueError:
+    print("You need to enter something. -> Skipped program!")
